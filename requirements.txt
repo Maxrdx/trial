@@ -1,3 +1,4 @@
 streamlit
-tensorflow
+tf-keras
 joblib
+numpy
