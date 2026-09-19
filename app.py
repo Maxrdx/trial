@@ -1,11 +1,9 @@
 import streamlit as st
 import joblib
-import os
-os.environ["TF_USE_LEGACY_KERAS"] = "1"
 import tensorflow as tf
 
 # 1. Load the saved model and scaler
-model = tf.keras.models.load_model('my_bank_model.keras')
+model = tf.keras.models.load_model('my_bank_model.keras', compile=False)
 scaler = joblib.load('my_scaler.pkl')
 
 # 2. Build the visual interface
